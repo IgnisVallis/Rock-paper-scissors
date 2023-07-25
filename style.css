@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "objection";
+    src: url(./fonts/Ace-Attorney.ttf) format('truetype');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(./imgs/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#presentation{
+    text-align: center;
+}
+
+
+.animated-text{
+font-size: 4em;
+    font-family: 'objection', 'sans-serif';
+    animation: appear .5s linear forwards;
+    color: yellow;
+
+  }
+  
+  #sub-title{
+    font-size: 3em;
+    animation: appear2 1s linear forwards .5s;
+    opacity: none;
+  }
+
+#board{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.character-place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option{
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+}
+
+.character {
+    width: 20rem;
+    height: 17rem;
+}
+
+#phoenix{
+    transform: translate(5rem,0);
+}
+
+#player-article{
+    transform: translate(5rem,1rem);
+}
+
+#edge{
+    transform: rotateY(180deg) translateX(2rem);
+}
+
+#computer-article{
+    transform: translate(-6rem,1rem);
+}
+
+  /*@keyframes appear{
+    0% {
+      top: -10%;
+      
+    }
+    100% {
+      top: 12%;
+      
+    }
+  }
+  @keyframes appear2{
+    0% {
+      opacity: none;
+      top: -10%;
+      
+    }
+    100% {
+      opacity: 1;
+      top: 22%;
+      
+    }
+  }*/
+
+  
