@@ -8,21 +8,24 @@
         <link href="./imgs/icon.png" type="img/png" rel="icon">
     </head>
     <body>
-        <body>
-            <main>
-            <section id="presentation">
-           <h1 class="animated-text">ACE ATTORNEY</h1>
-          <h2 class="animated-text" id="sub-title">TAKE THAT, HOLD IT AND OBJECTION!!</h2>
+        <button id="start">Start</button>
+       <main>
+       <section id="presentation">
+           <h1 class="presentation-text">ACE ATTORNEY</h1>
+          <h2 class="presentation-text" id="sub-title">TAKE THAT, HOLD IT AND OBJECTION!!</h2>
             </section>
-            <audio id="main-theme" volumen="0.4" autoplay>
-                <source src="./audio/main-theme.mp3">
+            <audio id="main-theme">
+                <source src="./audio/others/main-theme.mp3" type="audio/mp3">
             </audio>
-        </body>
+      
         
         <section id="board">
+            <audio id="judge-hammer">
+                <source src="./audio/others/hammer.mp3"></audio>
+            </audio>
             <article id="player-article" class="character-place">
                 <img id="phoenix" src="./imgs/phoenix.png" alt="phoenix" class="character">
-                <div id="options-phoenix">
+                <div id="options-phoenix" class="options">
                     <img class="option" src="./imgs/rock.png" alt="rock">
                     <img class="option" src="./imgs/paper.png" alt="paper">
                     <img class="option" src="./imgs/scissor.png" alt="scissor">
@@ -40,12 +43,12 @@
                 </div>
                 </article>
                 <article id="scoreboard">
-                    <p>Phoenix</p>  <span id="phoenix-puntuacion">0</span>
-                    <p>Edge</p> <span id="edge-puntuation">0</span>
+                    <p>Phoenix:</p> <span id="phoenix-puntuation"> 0</span><br>
+                    <p>Edge:</p> <span id="edge-puntuation"> 0</span>
                 </article>
                 <article id="computer-article" class="character-place">
             <img id="edge" src="./imgs/edge.png" alt="edge" class="character">
-          <div id="options-edge">
+          <div id="options-edge" class="options">
             <img class="option" src="./imgs/rock.png" alt="rock">
                 <img class="option" src="./imgs/paper.png" alt="paper">
                 <img class="option"  src="./imgs/scissor.png" alt="scissor">
@@ -64,6 +67,15 @@
         </article>
         </section>
     </main>
-    <script src="code.js"></script>
+    
+    <div class="final-screen oculted">
+        <P></P>
+        <img src="" alt="winner">
+    </div>
     </body>
+   
+    <audio id="cheers">
+        <source src="./audio/others/cheers.mp3">
+    </audio>
+    <script src="code.js"></script>
 </html>
