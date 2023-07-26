@@ -15,8 +15,6 @@ const options = ["rock","paper","scissor"];
 const winnerScreen = document.querySelector(".final-screen");
 const cheers = document.getElementById("cheers");
 
-console.log(winnerScreen);
-
 
 let playerCounter = 0;
 let computerCounter = 0;
