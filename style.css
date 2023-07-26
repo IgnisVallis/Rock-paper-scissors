@@ -80,6 +80,11 @@ img{
     transform: translate(-6rem,1rem);
 }
 
+.selection-chosen{
+    border-radius: 100%;
+    box-shadow: 5px 5px 20px #e6e209;
+}
+
   /*@keyframes appear{
     0% {
       top: -10%;
