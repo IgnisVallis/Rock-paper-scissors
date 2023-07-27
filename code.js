@@ -63,7 +63,7 @@ function duel(){
             phoenix.src = "./imgs/scared-phoenix.png";
             computerCounter++;
             edgeScore.innerHTML = computerCounter;
-            if(computerCounter == 4) displayTheWinner();
+            if(computerCounter == 5) displayTheWinner();
         }else{
             playerChoise == "rock"? phoenixVoice.children[0].play():
             playerChoise == "paper"? phoenixVoice.children[1].play():
